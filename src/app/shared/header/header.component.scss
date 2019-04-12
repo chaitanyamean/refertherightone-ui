@@ -1,9 +1,19 @@
 nav {
   height: 60px;
+  background: #39424e !important;
 
   ul {
     width: 100%;
+
+    li {
+      color: #fff;
+    }
+
+    a {
+      color: #fff;
+    }
   }
+
 
   .user-toggle {
     position: absolute;
@@ -13,5 +23,17 @@ nav {
     padding: 10px 0px;
     top: 0px;
     line-height: 35px;
+  }
+
+  .switch {
+    label {
+      cursor: pointer;
+      font-size: .8rem;
+      color: #fff !important;
+    }
+  }
+
+  .hide {
+    display: none;
   }
 }

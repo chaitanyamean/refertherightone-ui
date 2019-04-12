@@ -1,8 +1,27 @@
 <div class="side-nav" *ngIf="layoutService.sideNavOpened">
-  <div class="side-nav-container">
-    User
-    <p (click)="closeSideNav()">close</p>
+  <div class="side-nav-container" *ngIf="role === 'job-provider'">
+    Add job<br>
+    All published jobs<br>
+    <!-- <p (click)="closeSideNav()">close</p> -->
     {{role}}
   </div>
+
+  <div class="side-nav-container" *ngIf="role === 'job-seeker'">
+    <!-- Build your digital resume<br>
+    Career Guidance<br>
+    {{role}} -->
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+    </ul>
+    
+  </div>
+
+
   <div class="side-nav-overlay" (click)="closeSideNav()"></div>
 </div>

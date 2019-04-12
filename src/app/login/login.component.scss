@@ -1,0 +1,24 @@
+.card {
+  width: 480px;
+  margin-top: 25%;
+  margin-left: 25%;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, .2);
+}
+
+.btn-login {
+  background: #1ba94c;
+  border-color: #1ba94c;
+  box-shadow: 0 4px 12px 0 rgba(27, 169, 76, .5);
+  color: #fff;
+  height: 40px;
+}
+
+.btn-hover :hover {
+
+  color: #fff;
+}
+
+.forgot-class {
+    margin-top: -12px;
+    text-align: right;
+}
