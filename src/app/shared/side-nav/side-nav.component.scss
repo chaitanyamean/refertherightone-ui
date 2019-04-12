@@ -1,0 +1,23 @@
+.side-nav {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  z-index: 10000;
+
+  .side-nav-container {
+    width: 30%;
+    background-color: #fff;
+    height: 100%;
+    float: left;
+  }
+
+  .side-nav-overlay {
+    margin-left: 30%;
+    width: 70%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}

@@ -1,0 +1,8 @@
+<div class="side-nav" *ngIf="layoutService.sideNavOpened">
+  <div class="side-nav-container">
+    User
+    <p (click)="closeSideNav()">close</p>
+    {{role}}
+  </div>
+  <div class="side-nav-overlay" (click)="closeSideNav()"></div>
+</div>

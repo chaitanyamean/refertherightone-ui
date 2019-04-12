@@ -1,0 +1,17 @@
+nav {
+  height: 60px;
+
+  ul {
+    width: 100%;
+  }
+
+  .user-toggle {
+    position: absolute;
+    right: 18px;
+    width: 240px;
+    height: 60px;
+    padding: 10px 0px;
+    top: 0px;
+    line-height: 35px;
+  }
+}
