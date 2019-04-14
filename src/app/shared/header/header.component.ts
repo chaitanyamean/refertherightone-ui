@@ -43,4 +43,11 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  postJob() {
+    this.router.navigateByUrl('/job-provider/add-jobs');
+  }
+
+  allPubJobs() {
+    this.router.navigateByUrl('/job-provider/publish-jobs');
+  }
 }

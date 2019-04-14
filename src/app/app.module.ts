@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 import { ToastrModule } from 'ngx-toastr';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +22,8 @@ import { SharedModule } from './shared/shared.module';
 import { JobProviderModule } from './job-provider/job-provider.module';
 import { JobSeekerModule } from './job-seeker/job-seeker.module';
 import { AdminModule } from './admin/admin.module';
+import { EditorModule } from '@tinymce/tinymce-angular';
+import { CKEditorModule } from 'ckeditor4-angular';
 
 @NgModule({
   declarations: [
@@ -38,8 +41,12 @@ import { AdminModule } from './admin/admin.module';
     FormsModule,
     CommonModule,
     HttpClientModule,
+    CKEditorModule,
     BrowserAnimationsModule, // required animations module
-    ToastrModule.forRoot() // ToastrModule added
+    ToastrModule.forRoot(), // ToastrModule added
+    NgMultiSelectDropDownModule.forRoot(),
+    EditorModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -89,3 +89,15 @@
 .switch label .lever:before{
     background-color: rgba(38,166,154,0.15); // Job provider color
 }
+
+.btn-login {
+    background: #1ba94c;
+    border-color: #1ba94c;
+    box-shadow: 0 4px 12px 0 rgba(27, 169, 76, .5);
+    color: #fff;
+    height: 40px;
+  }
+  
+  .btn-hover :hover {
+    color: #fff;
+  }

@@ -1,0 +1,175 @@
+<!-- <div class="container">
+
+
+  <h2 class="h2-class">
+    Add Job
+  </h2>
+
+  <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+    <div class="form-group">
+      <label for="login">Email</label>
+      <input type="email" class="form-control" placeholder="Enter your Email" id="login" autofocus="true" required
+        [(ngModel)]="userDetails.email" name="login" #login="ngModel">
+      <div [hidden]="login.valid || login.pristine" class="alert alert-danger">
+        Login is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" placeholder="Enter Password" id="password" required
+        [(ngModel)]="userDetails.password" name="password" #password="ngModel">
+      <div [hidden]="password.valid || password.pristine" class="alert alert-danger">
+        Password is required
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <button type="submit" class="btn btn-login" [disabled]="!loginForm.form.valid">Login</button>
+
+      </div>
+
+
+
+    </div>
+
+  </form> -->
+
+<!-- <hello name="{{ name }}"></hello> -->
+<!-- <p>
+  Start editing to see some magic happen :)
+</p>
+
+  <ckeditor [config]="config" debounce="500"></ckeditor>
+
+  <ng-multiselect-dropdown [placeholder]="'custom placeholder'" [data]="dropdownList" [(ngModel)]="selectedItems"
+    [settings]="dropdownSettings" (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event)">
+  </ng-multiselect-dropdown>
+</div> -->
+
+<div class="container">
+
+
+  <h2 class="h2-class">
+    Add Job
+  </h2>
+
+  <!-- <editor apiKey="qirsm5bmi5azrsb3hvf4avfi7jncbj5nf1hldeszczorq9x1" [(ngModel)]="dataModel" [init]="{plugins: ['advlist', 
+    'autolink', 'lists', 'link', 'code']}"></editor>
+    {{dataModel}}
+    
+    <p [innerHTML]= "dataModel"></p> -->
+
+  <!-- <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" placeholder="Enter your Email" id="title" autofocus="true" required
+        [(ngModel)]="jobDetails.title" name="title">
+        
+      </div>
+      
+      <div class="form-group">
+        <label>Description</label>
+        <ckeditor [(ngModel)]="jobDetails.description"></ckeditor>
+      </div>
+
+      <div class="form-group">
+          <label for="password">Skills</label>
+          <ng-multiselect-dropdown [placeholder]="'custom placeholder'" [data]="dropdownList" [(ngModel)]="selectedItems"
+          [settings]="dropdownSettings" (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event)">
+        </ng-multiselect-dropdown>        
+      </div>
+
+      <div class="form-group">
+          <label for="company">Company Mail</label>
+          <input type="text" class="form-control" placeholder="Enter your Email" id="company" required
+          [(ngModel)]="jobDetails.companyMail" name="company">
+          
+        </div>
+      
+      <div class="row">
+        <div class="col-md-3">
+          <label>Experience From</label>
+          <select [(ngModel)]="jobDetails.experienceFrom">
+              <option value="1">1</option>
+              <option value="2">2</option>
+          </select>
+
+        </div>
+
+        <div class="col-md-3">
+            <label>Experience From</label>
+            <select [(ngModel)]="jobDetails.experienceFrom">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            
+          </div>
+        
+        
+        
+      </div>
+      
+    </form> -->
+
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" placeholder="Enter Job Title" id="title" autofocus="true" required
+      [(ngModel)]="jobDetails.title" name="title">
+
+  </div>
+
+  <label>Description</label>
+
+  <ckeditor [(ngModel)]="jobDetails.description"></ckeditor>
+
+  <label class="lab-class">Skills</label>
+
+  <ng-multiselect-dropdown [placeholder]="'custom placeholder'" [data]="dropdownList" [(ngModel)]="jobDetails.skills"
+    [settings]="dropdownSettings" (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event)">
+  </ng-multiselect-dropdown>
+
+  <div class="form-group">
+    <label class="lab-class">Company Mail</label>
+    <input type="text" class="form-control" placeholder="Enter your Company Email" id="company" required
+      [(ngModel)]="jobDetails.companyMail" name="company">
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+
+        <label>Experience From</label>
+        <select class="form-control" [(ngModel)]="jobDetails.experienceFrom">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Experience To</label>
+        <select class="form-control" [(ngModel)]="jobDetails.experienceTo">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Select City</label>
+    <select class="form-control" [(ngModel)]="jobDetails.city">
+      <option value="Hyderaband">Hyderaband</option>
+      <option value="Banglore">Banglore</option>
+    </select>
+  </div>
+
+
+  <div class="row">
+      <div class="col-md-3">
+        <button type="button" (click)="addJob()" class="btn btn-login">Add Job</button>
+      </div>
+    </div>

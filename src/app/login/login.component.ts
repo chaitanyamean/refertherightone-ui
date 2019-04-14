@@ -26,6 +26,9 @@ export class LoginComponent implements OnInit {
     this.userService.login(this.userDetails).subscribe(data => {
       const resObj: any = data;
       if (resObj.status === 200) {
+        localStorage.setItem('authToken', resObj.authToken);
+        localStorage.setItem('userId', resObj.result.userId);
+        localStorage.setItem('name', resObj.result.name);
         this.toastr.success(resObj.result.name, 'Welcome');
         this.router.navigate(['/job-seeker']);
         console.log(data);

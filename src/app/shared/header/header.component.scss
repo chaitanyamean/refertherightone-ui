@@ -36,4 +36,16 @@ nav {
   .hide {
     display: none;
   }
+
+  .menu-color {
+    background: #39424e !important;
+  }
+
+  .dropdown-class {
+
+    &:hover {
+      background-color: #39424e !important;
+      color: #fff;
+    }
+  }
 }
